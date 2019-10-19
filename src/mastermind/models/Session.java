@@ -28,34 +28,19 @@ public class Session  {
         return this.state.getValue();
     }
 
-    public int getGameWidth() {
-        return this.game.getGameWidth();
-    }
-
     public void addProposedCombination(ProposedCombination proposedCombination){
         this.game.addProposedCombination(proposedCombination);
     }
 
-    public int getAttempts() { return this.game.getAttempts(); }
-
+    public SecretCombination getSecretCombination(){
+        return this.game.getSecretCombination();
+    }
     public boolean isWinner() {
         return this.game.isWinner();
     }
 
     public boolean isLooser() {
         return this.game.isLooser();
-    }
-
-    public List<Color> getColors(int position) {
-        return this.game.getColors(position);
-    }
-
-    public int getBlacks(int position) {
-        return this.game.getBlacks(position);
-    }
-
-    public int getWhites(int position) {
-        return this.game.getWhites(position);
     }
 
     public Game getGame() {

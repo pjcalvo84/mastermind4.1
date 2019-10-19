@@ -29,6 +29,7 @@ public class Game{
     }
 
     public void addProposedCombination(ProposedCombination proposedCombination) {
+        this.proposedCombinations.add(proposedCombination);
         this.results.add(this.secretCombination.getResult(proposedCombination));
         this.attempts++;
     }

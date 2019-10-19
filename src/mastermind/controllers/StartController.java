@@ -13,7 +13,7 @@ public class StartController extends Controller {
 
     public void control(){
         new StartView().writeGameIntro();
-        new SecretCombinationView(session.getGame().getSecretCombination()).writeln();
+        new SecretCombinationView(session.getSecretCombination()).writeln();
         session.next();
     }
 }
