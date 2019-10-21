@@ -26,6 +26,6 @@ public class GameView extends WithConsoleView{
         for (Color color : game.getColors(position)) {
             new ColorView(color).write();
         }
-        new ResultView().writeln(game.getBlacks(position),game.getWhites(position));
+        new ResultView(game.getResult(position)).writeln();
     }
 }
