@@ -6,11 +6,15 @@ import santaTecla.utils.WithConsoleView;
 
 public class ResultView extends WithConsoleView {
 
-    public ResultView() {	}
 
-    public void writeln(int blacks,int whites) {
+    private Result result;
+    public ResultView(Result result) {
+        this.result = result;
+    	}
+
+    public void writeln() {
         this.console.writeln(MessageView.RESULT.getMessage()
-                .replaceFirst("#blacks", "" + blacks)
-                .replaceFirst("#whites", "" + whites));
+                .replaceFirst("#blacks", "" + result.getBlacks)
+                .replaceFirst("#whites", "" + result.getWhites));
     }
 }
