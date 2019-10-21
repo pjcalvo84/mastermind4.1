@@ -14,7 +14,7 @@ public class ResultView extends WithConsoleView {
 
     public void writeln() {
         this.console.writeln(MessageView.RESULT.getMessage()
-                .replaceFirst("#blacks", "" + result.getBlacks)
-                .replaceFirst("#whites", "" + result.getWhites));
+                .replaceFirst("#blacks", "" + result.getBlacks())
+                .replaceFirst("#whites", "" + result.getWhites()));
     }
 }
