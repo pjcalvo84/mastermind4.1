@@ -65,6 +65,10 @@ public class Game{
     public int getWhites(int position) {
         return this.results.get(position).getWhites();
     }
+    
+    public int getResult(int position) {
+        return this.results.get(position);
+    }
 
 }
 
